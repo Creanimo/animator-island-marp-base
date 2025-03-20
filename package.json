@@ -1,0 +1,25 @@
+{
+  "name": "animator-island-marp-base",
+  "version": "1.0.0",
+  "description": "A presentation boilerplate for Animator Island",
+  "main": "index.html",
+  "scripts": {
+      "sass": "npx sass src/themes/animisland-base.scss src/themes/animisland-base.css && sed -i \"1s|^|@import 'default';\\n|\" src/themes/animisland-base.css",
+    "preview": "npx marp $npm_config_src --themes src/themes/animisland-base.css --preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Creanimo/animator-island-marp-base.git"
+  },
+  "author": "Ferdinand Engländer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Creanimo/animator-island-marp-base/issues"
+  },
+  "homepage": "https://github.com/Creanimo/animator-island-marp-base#readme",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.1.2",
+    "sass": "^1.86.0"
+  }
+}
